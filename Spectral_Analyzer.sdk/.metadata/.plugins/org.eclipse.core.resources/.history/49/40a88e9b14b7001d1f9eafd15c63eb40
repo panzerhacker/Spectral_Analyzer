@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Feb 2023
+ *      Author: panze
+ */
+
+
+#include "Includes\codec_config.h"
+#include "Includes\fft_audio_stream.h"
+
+int main(void) {
+
+	setup_Codec();
+	stream_Audio();
+
+	return 0;
+}

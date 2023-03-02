@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Feb 2023
+ *      Author: Alex
+ */
+
+
+#include "Includes/codec_config.h"
+#include "Includes/fft_audio_stream.h"
+#include "dma.c"
+
+
+int main(void) {
+
+	xil_printf("New Program\r\n");
+	//setup_Codec();
+	//stream_Audio();
+	int result = hard_FFT_Test();
+
+	return 0;
+}

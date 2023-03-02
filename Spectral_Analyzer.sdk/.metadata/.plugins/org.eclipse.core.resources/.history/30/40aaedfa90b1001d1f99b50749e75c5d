@@ -1,0 +1,89 @@
+/*
+ * fft_audio_stream.c
+ *
+ *  Created on: 21 Feb 2023
+ *      Author: Alex
+ */
+
+
+
+#include "Includes/fft_audio_stream.h"
+
+float* build_Hamming_Window(int M) {
+
+	float *window;
+
+	window = malloc (SAMPLE_SIZE*2 * sizeof(float));
+
+	for (int l = 0; l < M; l++) {
+
+		window[l] = 0.54 - 0.46 * cos((2 * M_PI * l) / M);
+
+	}
+	if (window[SAMPLE_SIZE*2-1] == 0) {
+		for (int p = M; p < SAMPLE_SIZE; p++) {
+			window[p] = 0;
+		}
+	}
+
+	return window;
+}
+
+void stream_Audio() {
+
+	u32 in_left, in_right;
+	kiss_fft_cpx *Input, *Output;
+	float *w;
+	kiss_fft_cfg FFT_cfg;
+	XTime start, stop;
+
+
+	Input = malloc (SAMPLE_SIZE * sizeof(kiss_fft_cpx));
+	if (Input == NULL) {
+		xil_printf("Malloc I_L failed!\r\n");
+	}
+	Output = malloc (SAMPLE_SIZE * sizeof(kiss_fft_cpx));
+	if (Output == NULL) {
+		xil_printf("Malloc O_L failed!\r\n");
+	}
+
+	/*Input_R = malloc (SAMPLE_SIZE * sizeof(kiss_fft_cpx));
+	if (Input_R == NULL) {
+		xil_printf("Malloc I_R failed!\r\n");
+	}
+	Output_R = malloc (SAMPLE_SIZE * sizeof(kiss_fft_cpx));
+	if (Output_R == NULL) {
+		xil_printf("Malloc O_R failed!\r\n");
+	}*/
+
+	w = build_Hamming_Window(WINDOW_SIZE);
+
+	FFT_cfg = kiss_fft_alloc(SAMPLE_SIZE, 0, NULL, NULL);
+
+	XTime_GetTime(&start);
+
+	for (int j = 0; j < 16; j++) {
+
+		for (int i = 0; i < SAMPLE_SIZE; i++) {
+
+			// Read audio input from codec
+			in_left = Xil_In32(I2S_DATA_RX_L_REG);
+			in_right =  Xil_In32(I2S_DATA_RX_R_REG);
+			Input[i].r = (kiss_fft_scalar) (in_left * w[i]);
+			Input[i].i = (kiss_fft_scalar) (in_right * w[i]);;
+			Xil_Out32(I2S_DATA_TX_L_REG, in_left);
+			Xil_Out32(I2S_DATA_TX_R_REG, in_right);
+
+		}
+
+		kiss_fft(FFT_cfg, Input, Output);
+
+	}
+
+	XTime_GetTime(&stop);
+	printf("Finished! Time taken to process 16 sets\r\nof 16384 samples: %f seconds\r\n\r\n", 1.0 * (stop - start) / (COUNTS_PER_SECOND));
+
+	free(Input);
+	free(Output);
+
+}

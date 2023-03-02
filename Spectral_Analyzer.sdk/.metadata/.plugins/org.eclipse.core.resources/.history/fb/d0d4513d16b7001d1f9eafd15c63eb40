@@ -1,0 +1,24 @@
+/*
+ * dma.h
+ *
+ *  Created on: 27 Feb 2023
+ *      Author: Alex
+ */
+
+#ifndef SRC_INCLUDES_DMA_H_
+#define SRC_INCLUDES_DMA_H_
+
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xscugic.h"
+
+#define DMA_DEV_ID					XPAR_AXIDMA_0_DEVICE_ID
+#define INTR_RX_ID					XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID
+#define INTR_TX_ID					XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID
+#define INTR_CTRL_DEVICE_ID         XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTR_CTRL_HANDLER			XScuGic_InterruptHandler
+
+static XAxiDma AxiDma;
+static XScuGic Intr_Ctrl;
+
+#endif /* SRC_INCLUDES_DMA_H_ */

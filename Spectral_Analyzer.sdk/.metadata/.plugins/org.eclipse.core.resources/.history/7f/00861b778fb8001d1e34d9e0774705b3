@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Feb 2023
+ *      Author: panze
+ */
+
+
+#include "Includes\codec_config.h"
+#include "Includes\fft_audio_stream.h"
+#include "Includes\dma.h"
+
+int main(void) {
+
+	setup_Codec();
+	stream_Audio();
+	//hard_FFT_Test();
+	dma_Config();
+
+	return 0;
+}

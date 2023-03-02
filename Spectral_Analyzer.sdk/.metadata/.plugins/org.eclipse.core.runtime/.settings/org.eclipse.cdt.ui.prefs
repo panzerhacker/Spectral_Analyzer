@@ -1,0 +1,11 @@
+content_assist_parameters_background=0,64,128
+content_assist_proposals_background=0,128,192
+eclipse.preferences.version=1
+inactiveCodeColor=0,128,192
+matchingBracketsColor=0,128,255
+sourceHoverBackgroundColor=41,41,41
+sourceHoverBackgroundColor.SystemDefault=false
+spelling_locale=en_GB
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

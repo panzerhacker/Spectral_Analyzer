@@ -1,0 +1,62 @@
+/*
+ * dma.c
+ *
+ *  Created on: 26 Feb 2023
+ *      Author: Alex
+ */
+
+#include "Includes\dma.h"
+
+int dma_Config(void) {
+
+	XAxiDma_Config *DMA_confptr;
+	XAxiDma AxiDMA;
+	kiss_fft_cpx *fft_input, *fft_output;
+	int status;
+
+	DMA_confptr = XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+	status = XAxiDma_CfgInitialize(&AxiDMA, DMA_confptr);
+	if (status != XST_SUCCESS) {
+		xil_printf("Config initialisation failed!\r\n");
+		return XST_FAILURE;
+	}
+
+	fft_input = malloc(2 * sizeof(kiss_fft_cpx) * FFT_SIZE);
+	fft_output = malloc(2 * sizeof(kiss_fft_cpx) * FFT_SIZE);
+
+	for (int i = 0; i < FFT_SIZE; i++) {
+		fft_input[i].r = (float) i;
+		fft_input[i].i = 0.0;
+		xil_printf("R: %d, I: %d\r\n", (int) fft_input[i].r, (int) fft_input[i].i);
+	}
+
+	Xil_DCacheFlushRange((UINTPTR) fft_input, (sizeof(kiss_fft_cpx) * FFT_SIZE));
+
+	status = XAxiDma_SimpleTransfer(&AxiDMA, (UINTPTR) fft_output, (sizeof(kiss_fft_cpx) * FFT_SIZE), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDMA, (UINTPTR) fft_input, (sizeof(kiss_fft_cpx) * FFT_SIZE), XAXIDMA_DMA_TO_DEVICE);
+
+	status = check_If_DMA_Idle(XPAR_AXIDMA_0_BASEADDR, DMA_MM2S_REG_OFFSET);
+	while (status != DMA_IDLE_ADDR) {
+		status = check_If_DMA_Idle(XPAR_AXIDMA_0_BASEADDR, DMA_MM2S_REG_OFFSET);
+	}
+
+	status = check_If_DMA_Idle(XPAR_AXIDMA_0_BASEADDR, DMA_S2MM_REG_OFFSET);
+	while (status != DMA_IDLE_ADDR) {
+		status = check_If_DMA_Idle(XPAR_AXIDMA_0_BASEADDR, DMA_S2MM_REG_OFFSET);
+	}
+
+	for (int i = 0; i < 8; i++) {
+		fft_output[i].r = (float) i;
+		fft_output[i].i = 0.0;
+		xil_printf("R: %d, I: %d\r\n", (int) fft_output[i].r, (int) fft_output[i].i);
+	}
+
+	return XST_SUCCESS;
+}
+
+u32 check_If_DMA_Idle(u32 baseAddress, u32 offset) {
+	u32 status;
+
+	status = XAxiDma_ReadReg(baseAddress, offset) & DMA_IDLE_ADDR;
+	return status;
+}

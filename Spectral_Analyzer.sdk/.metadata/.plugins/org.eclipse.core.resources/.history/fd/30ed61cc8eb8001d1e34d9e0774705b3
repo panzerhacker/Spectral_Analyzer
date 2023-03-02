@@ -1,0 +1,21 @@
+/*
+ * dma.h
+ *
+ *  Created on: 26 Feb 2023
+ *      Author: Alex
+ */
+
+#ifndef DMA_H
+#define DMA_H
+
+#include "xaxidma.h"
+#include "kiss_fft.h"
+
+#define FFT_SIZE 8
+#define DMA_IDLE_ADDR 0x00000002
+#define DMA_MM2S_REG_OFFSET 0x04
+#define DMA_S2MM_REG_OFFSET 0x34
+
+int dma_Config(void);
+
+#endif

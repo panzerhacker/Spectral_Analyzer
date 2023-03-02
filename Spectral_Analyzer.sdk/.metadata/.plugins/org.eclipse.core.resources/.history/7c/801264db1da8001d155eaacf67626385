@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: 8 Feb 2023
+ *      Author: panze
+ */
+
+
+#include "codec_config.h"
+#include "arm_math.h"
+
+int main(void) {
+
+	stream_Audio();
+
+	return 0;
+}
+

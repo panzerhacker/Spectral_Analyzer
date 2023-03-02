@@ -1,0 +1,34 @@
+/*
+ * dma.h
+ *
+ *  Created on: 27 Feb 2023
+ *      Author: Alex
+ */
+
+#ifndef SRC_INCLUDES_DMA_H_
+#define SRC_INCLUDES_DMA_H_
+
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+#define DMA_DEV_ID					XPAR_AXIDMA_0_DEVICE_ID
+#define INTR_RX_ID					XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID
+#define INTR_TX_ID					XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID
+#define INTR_CTRL_DEVICE_ID         XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTR_CTRL_HANDLER			XScuGic_InterruptHandler
+#define TIMEOUT_COUNTER				10000
+
+static XAxiDma axi_Dma;
+static XScuGic intr_Ctrl;
+volatile int TxDone;
+volatile int RxDone;
+volatile int Error;
+
+int dma_Setup(void);
+static int SetupIntrSystem(XScuGic * intr_Ctrl_Inst_Ptr, XAxiDma * axi_Dma_Ptr, u16 tx_Intr_ID, u16 rx_Intr_ID);
+static void TxIntrHandler(void *Callback);
+static void RxIntrHandler(void *Callback);
+
+#endif /* SRC_INCLUDES_DMA_H_ */

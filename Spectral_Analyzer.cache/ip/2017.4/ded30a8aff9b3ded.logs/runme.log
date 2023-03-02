@@ -1,0 +1,2011 @@
+
+*** Running vivado
+    with args -log Audio_Interface_fifo_generator_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Audio_Interface_fifo_generator_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Audio_Interface_fifo_generator_0_0.tcl -notrace
+Command: synth_design -top Audio_Interface_fifo_generator_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9092 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 366.898 ; gain = 102.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Audio_Interface_fifo_generator_0_0' [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/synth/Audio_Interface_fifo_generator_0_0.vhd:106]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 2 - type: integer 
+	Parameter C_AXI_TYPE bound to: 2 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 2 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 2kx18 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 2kx18 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 2kx18 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 2kx18 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 35 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 36 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 35 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 34 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 8192 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 65536 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 8192 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 65536 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 13 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 16 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 13 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 16 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 8191 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 65535 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 8191 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 65535 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 8190 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 65534 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 14 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 8190 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 65534 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_1' declared at 'c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ipshared/5c35/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_1' [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/synth/Audio_Interface_fifo_generator_0_0.vhd:610]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1228]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_async_rst' (1#1) [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1177]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1045]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1097]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_sync_rst' (17#1) [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1045]
+INFO: [Synth 8-256] done synthesizing module 'Audio_Interface_fifo_generator_0_0' (30#1) [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/synth/Audio_Interface_fifo_generator_0_0.vhd:106]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[15]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[14]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[13]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[12]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[11]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[10]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[15]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[14]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[13]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[12]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[11]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[10]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss__parameterized0 has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr__parameterized0 has unconnected port RST
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[15]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[14]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[13]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[12]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[11]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[10]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[9]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[8]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[7]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[6]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[15]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[14]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[13]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[12]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[11]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[10]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[9]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[8]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[15]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[14]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[13]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[12]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[11]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[10]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[9]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[8]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[7]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_logic__parameterized0 has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design rd_fwft__parameterized0 has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_fwft__parameterized0 has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_fwft__parameterized0 has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design rd_status_flags_ss__parameterized0 has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss__parameterized0 has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss__parameterized0 has unconnected port RD_PNTR_PLUS2[15]
+WARNING: [Synth 8-3331] design rd_status_flags_ss__parameterized0 has unconnected port RD_PNTR_PLUS2[14]
+WARNING: [Synth 8-3331] design rd_status_flags_ss__parameterized0 has unconnected port RD_PNTR_PLUS2[13]
+WARNING: [Synth 8-3331] design rd_status_flags_ss__parameterized0 has unconnected port RD_PNTR_PLUS2[12]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:52 ; elapsed = 00:03:53 . Memory (MB): peak = 790.766 ; gain = 526.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:53 ; elapsed = 00:03:54 . Memory (MB): peak = 790.766 ; gain = 526.012
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/Audio_Interface_fifo_generator_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/Audio_Interface_fifo_generator_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/Audio_Interface_fifo_generator_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.srcs/sources_1/bd/Audio_Interface/ip/Audio_Interface_fifo_generator_0_0/Audio_Interface_fifo_generator_0_0.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.runs/Audio_Interface_fifo_generator_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.runs/Audio_Interface_fifo_generator_0_0_synth_1/dont_touch.xdc]
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Audio_Interface_fifo_generator_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Audio_Interface_fifo_generator_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 904.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:04:06 ; elapsed = 00:04:08 . Memory (MB): peak = 904.043 ; gain = 639.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:06 ; elapsed = 00:04:08 . Memory (MB): peak = 904.043 ; gain = 639.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.runs/Audio_Interface_fifo_generator_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0/inst_fifo_gen/\gaxi_full_lite.gread_ch.grach2.axi_rach /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/inst_fifo_gen/\gaxi_full_lite.gread_ch.grdch2.axi_rdch /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/inst_fifo_gen/\gaxi_full_lite.gwrite_ch.gwach2.axi_wach /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/inst_fifo_gen/\gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/inst_fifo_gen/\gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:06 ; elapsed = 00:04:08 . Memory (MB): peak = 904.043 ; gain = 639.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:12 ; elapsed = 00:04:14 . Memory (MB): peak = 904.043 ; gain = 639.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 486   
++---Registers : 
+	               36 Bit    Registers := 1     
+	               35 Bit    Registers := 4     
+	               34 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               13 Bit    Registers := 4     
+	                5 Bit    Registers := 240   
+	                4 Bit    Registers := 13    
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 1017  
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 20    
+	   5 Input      2 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 87    
+	   4 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xpm_cdc_async_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module reset_blk_ramfifo__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	               35 Bit    Registers := 1     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               35 Bit    Registers := 1     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 13    
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rd_fwft 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module xpm_cdc_sync_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module reset_blk_ramfifo__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module blk_mem_gen_prim_width 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized16 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized17 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized18 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized19 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized20 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized21 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized22 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized23 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized24 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized25 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized26 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized27 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized28 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized29 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized30 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized31 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized33 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized34 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized35 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized36 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized37 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized38 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized39 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized40 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized41 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized42 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized43 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized44 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized45 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized46 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized47 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized48 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized49 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized50 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized51 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized52 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized53 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized54 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized55 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized56 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized57 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized58 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized59 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized60 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized61 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized62 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module memory__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+Module rd_bin_cntr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module compare__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 16    
+Module rd_status_flags_ss__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rd_fwft__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module wr_bin_cntr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module wr_status_flags_ss__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module reset_blk_ramfifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module dmem__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module memory__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module rd_bin_cntr__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+Module compare__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module rd_status_flags_ss__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module wr_bin_cntr__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+Module wr_status_flags_ss__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module reset_blk_ramfifo__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module reset_blk_ramfifo__parameterized0__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module blk_mem_gen_prim_width__parameterized63 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized64 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized65 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized66 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized67 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized68 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized69 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized70 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized71 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized72 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized73 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized74 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized75 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized76 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized77 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized78 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized79 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized80 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized81 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized82 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized83 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized84 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized85 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized86 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized87 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized88 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized89 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized90 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized91 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized92 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized93 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized94 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized95 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized96 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized97 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized98 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized99 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized100 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized101 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized102 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized103 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized104 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized105 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized106 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized107 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized108 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized109 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized110 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized111 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized112 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized113 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized114 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized115 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized116 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized117 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_mux__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module memory__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               34 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:22 ; elapsed = 00:04:26 . Memory (MB): peak = 904.043 ; gain = 639.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------------+
+|Module Name | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives                      | 
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------------+
+|U0          | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 8 K x 35             | RAM64X1D x 256  RAM64M x 1408   | 
+|U0          | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 2               | RAM16X1D x 2                    | 
+|U0          | inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg  | User Attribute | 8 K x 35             | RAM64X1D x 256  RAM64M x 1408   | 
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:31 ; elapsed = 00:04:34 . Memory (MB): peak = 904.043 ; gain = 639.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:34 ; elapsed = 00:04:37 . Memory (MB): peak = 954.844 ; gain = 690.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------------+
+|Module Name | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives                      | 
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------------+
+|U0          | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 8 K x 35             | RAM64X1D x 256  RAM64M x 1408   | 
+|U0          | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 2               | RAM16X1D x 2                    | 
+|U0          | inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg  | User Attribute | 8 K x 35             | RAM64X1D x 256  RAM64M x 1408   | 
++------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+---------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:41 ; elapsed = 00:04:44 . Memory (MB): peak = 1035.309 ; gain = 770.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/p_19_out  is driving 248 big block pins (URAM, BRAM and DSP loads). Created 25 replicas of its driver. 
+INFO: [Synth 8-6064] Net \inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/p_19_out  is driving 256 big block pins (URAM, BRAM and DSP loads). Created 26 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:44 ; elapsed = 00:04:47 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:44 ; elapsed = 00:04:47 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:47 ; elapsed = 00:04:51 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:47 ; elapsed = 00:04:51 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:48 ; elapsed = 00:04:51 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:48 ; elapsed = 00:04:51 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name            | RTL Name                                                                                                                                                                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fifo_generator_v13_2_1 | inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4] | 4      | 128   | NO           | NO                 | YES               | 128    | 0       | 
+|fifo_generator_v13_2_1 | inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4]  | 4      | 110   | NO           | NO                 | YES               | 110    | 0       | 
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    32|
+|2     |LUT1       |    31|
+|3     |LUT2       |   358|
+|4     |LUT3       |    31|
+|5     |LUT4       |   148|
+|6     |LUT5       |    13|
+|7     |LUT6       |  3133|
+|8     |MUXCY      |   120|
+|9     |MUXF7      |  1316|
+|10    |MUXF8      |   623|
+|11    |RAM16X1D   |     2|
+|12    |RAM64M     |  2816|
+|13    |RAM64X1D   |   512|
+|14    |RAMB36E1   |   112|
+|15    |RAMB36E1_1 |     7|
+|16    |RAMB36E1_2 |     7|
+|17    |SRL16E     |   238|
+|18    |FDCE       |   987|
+|19    |FDPE       |    48|
+|20    |FDRE       | 10677|
+|21    |FDSE       |    15|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------------------------+---------------------------------------------+------+
+|      |Instance                                                                   |Module                                       |Cells |
++------+---------------------------------------------------------------------------+---------------------------------------------+------+
+|1     |top                                                                        |                                             | 21226|
+|2     |  U0                                                                       |fifo_generator_v13_2_1                       | 21226|
+|3     |    inst_fifo_gen                                                          |fifo_generator_v13_2_1_synth                 | 21168|
+|4     |      \gaxi_full_lite.gread_ch.grach2.axi_rach                             |fifo_generator_top__xdcDup__1                |  8988|
+|5     |        \grf.rf                                                            |fifo_generator_ramfifo__xdcDup__1            |  8988|
+|6     |          \gntv_or_sync_fifo.gl0.rd                                        |rd_logic_18                                  |   366|
+|7     |            \gr1.gr1_int.rfwft                                             |rd_fwft_26                                   |    17|
+|8     |            \grss.rsts                                                     |rd_status_flags_ss_27                        |    17|
+|9     |              c1                                                           |compare_29                                   |     8|
+|10    |              c2                                                           |compare_30                                   |     7|
+|11    |            rpntr                                                          |rd_bin_cntr_28                               |   332|
+|12    |          \gntv_or_sync_fifo.gl0.wr                                        |wr_logic_19                                  |   365|
+|13    |            \gwss.wsts                                                     |wr_status_flags_ss_22                        |    26|
+|14    |              c0                                                           |compare_24                                   |     7|
+|15    |              c1                                                           |compare_25                                   |     8|
+|16    |            wpntr                                                          |wr_bin_cntr_23                               |   339|
+|17    |          \gntv_or_sync_fifo.mem                                           |memory_20                                    |  8244|
+|18    |            \gdm.dm_gen.dm                                                 |dmem_21                                      |  8209|
+|19    |          rstblk                                                           |reset_blk_ramfifo__xdcDup__1                 |    13|
+|20    |            \ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst           |xpm_cdc_async_rst                            |     2|
+|21    |      \gaxi_full_lite.gread_ch.grdch2.axi_rdch                             |fifo_generator_top__parameterized2           |  1452|
+|22    |        \grf.rf                                                            |fifo_generator_ramfifo__parameterized2       |  1452|
+|23    |          \gntv_or_sync_fifo.gl0.rd                                        |rd_logic__parameterized0_7                   |   182|
+|24    |            \gr1.gr1_int.rfwft                                             |rd_fwft__parameterized0_13                   |    18|
+|25    |            \grss.rsts                                                     |rd_status_flags_ss__parameterized0_14        |    19|
+|26    |              c1                                                           |compare__parameterized0_16                   |     8|
+|27    |              c2                                                           |compare__parameterized0_17                   |     9|
+|28    |            rpntr                                                          |rd_bin_cntr__parameterized0_15               |   145|
+|29    |          \gntv_or_sync_fifo.gl0.wr                                        |wr_logic__parameterized0_8                   |   178|
+|30    |            \gwss.wsts                                                     |wr_status_flags_ss__parameterized0_9         |    49|
+|31    |              c0                                                           |compare__parameterized0_11                   |     8|
+|32    |              c1                                                           |compare__parameterized0_12                   |     8|
+|33    |            wpntr                                                          |wr_bin_cntr__parameterized0_10               |   129|
+|34    |          \gntv_or_sync_fifo.mem                                           |memory__parameterized2                       |  1073|
+|35    |            \gbm.gbmg.gbmga.ngecc.bmg                                      |blk_mem_gen_v8_4_1__parameterized1           |  1039|
+|36    |              inst_blk_mem_gen                                             |blk_mem_gen_v8_4_1_synth__parameterized0     |  1039|
+|37    |                \gnbram.gnativebmg.native_blk_mem_gen                      |blk_mem_gen_top__parameterized0              |  1039|
+|38    |                  \valid.cstr                                              |blk_mem_gen_generic_cstr__parameterized0     |  1039|
+|39    |                    \has_mux_b.B                                           |blk_mem_gen_mux__parameterized2              |   193|
+|40    |                    \ramloop[0].ram.r                                      |blk_mem_gen_prim_width__parameterized63      |    15|
+|41    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized63    |     1|
+|42    |                    \ramloop[10].ram.r                                     |blk_mem_gen_prim_width__parameterized73      |    15|
+|43    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized73    |     1|
+|44    |                    \ramloop[11].ram.r                                     |blk_mem_gen_prim_width__parameterized74      |    15|
+|45    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized74    |     1|
+|46    |                    \ramloop[12].ram.r                                     |blk_mem_gen_prim_width__parameterized75      |    15|
+|47    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized75    |     1|
+|48    |                    \ramloop[13].ram.r                                     |blk_mem_gen_prim_width__parameterized76      |    15|
+|49    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized76    |     1|
+|50    |                    \ramloop[14].ram.r                                     |blk_mem_gen_prim_width__parameterized77      |    15|
+|51    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized77    |     1|
+|52    |                    \ramloop[15].ram.r                                     |blk_mem_gen_prim_width__parameterized78      |    15|
+|53    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized78    |     1|
+|54    |                    \ramloop[16].ram.r                                     |blk_mem_gen_prim_width__parameterized79      |    15|
+|55    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized79    |     1|
+|56    |                    \ramloop[17].ram.r                                     |blk_mem_gen_prim_width__parameterized80      |    15|
+|57    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized80    |     1|
+|58    |                    \ramloop[18].ram.r                                     |blk_mem_gen_prim_width__parameterized81      |    15|
+|59    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized81    |     1|
+|60    |                    \ramloop[19].ram.r                                     |blk_mem_gen_prim_width__parameterized82      |    15|
+|61    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized82    |     1|
+|62    |                    \ramloop[1].ram.r                                      |blk_mem_gen_prim_width__parameterized64      |    15|
+|63    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized64    |     1|
+|64    |                    \ramloop[20].ram.r                                     |blk_mem_gen_prim_width__parameterized83      |    15|
+|65    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized83    |     1|
+|66    |                    \ramloop[21].ram.r                                     |blk_mem_gen_prim_width__parameterized84      |    15|
+|67    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized84    |     1|
+|68    |                    \ramloop[22].ram.r                                     |blk_mem_gen_prim_width__parameterized85      |    15|
+|69    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized85    |     1|
+|70    |                    \ramloop[23].ram.r                                     |blk_mem_gen_prim_width__parameterized86      |    15|
+|71    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized86    |     1|
+|72    |                    \ramloop[24].ram.r                                     |blk_mem_gen_prim_width__parameterized87      |    15|
+|73    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized87    |     1|
+|74    |                    \ramloop[25].ram.r                                     |blk_mem_gen_prim_width__parameterized88      |    15|
+|75    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized88    |     1|
+|76    |                    \ramloop[26].ram.r                                     |blk_mem_gen_prim_width__parameterized89      |    15|
+|77    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized89    |     1|
+|78    |                    \ramloop[27].ram.r                                     |blk_mem_gen_prim_width__parameterized90      |    15|
+|79    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized90    |     1|
+|80    |                    \ramloop[28].ram.r                                     |blk_mem_gen_prim_width__parameterized91      |    15|
+|81    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized91    |     1|
+|82    |                    \ramloop[29].ram.r                                     |blk_mem_gen_prim_width__parameterized92      |    15|
+|83    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized92    |     1|
+|84    |                    \ramloop[2].ram.r                                      |blk_mem_gen_prim_width__parameterized65      |    15|
+|85    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized65    |     1|
+|86    |                    \ramloop[30].ram.r                                     |blk_mem_gen_prim_width__parameterized93      |    15|
+|87    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized93    |     1|
+|88    |                    \ramloop[31].ram.r                                     |blk_mem_gen_prim_width__parameterized94      |    15|
+|89    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized94    |     1|
+|90    |                    \ramloop[32].ram.r                                     |blk_mem_gen_prim_width__parameterized95      |    15|
+|91    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized95    |     1|
+|92    |                    \ramloop[33].ram.r                                     |blk_mem_gen_prim_width__parameterized96      |    15|
+|93    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized96    |     1|
+|94    |                    \ramloop[34].ram.r                                     |blk_mem_gen_prim_width__parameterized97      |    15|
+|95    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized97    |     1|
+|96    |                    \ramloop[35].ram.r                                     |blk_mem_gen_prim_width__parameterized98      |    15|
+|97    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized98    |     1|
+|98    |                    \ramloop[36].ram.r                                     |blk_mem_gen_prim_width__parameterized99      |    15|
+|99    |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized99    |     1|
+|100   |                    \ramloop[37].ram.r                                     |blk_mem_gen_prim_width__parameterized100     |    15|
+|101   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized100   |     1|
+|102   |                    \ramloop[38].ram.r                                     |blk_mem_gen_prim_width__parameterized101     |    15|
+|103   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized101   |     1|
+|104   |                    \ramloop[39].ram.r                                     |blk_mem_gen_prim_width__parameterized102     |    15|
+|105   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized102   |     1|
+|106   |                    \ramloop[3].ram.r                                      |blk_mem_gen_prim_width__parameterized66      |    15|
+|107   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized66    |     1|
+|108   |                    \ramloop[40].ram.r                                     |blk_mem_gen_prim_width__parameterized103     |    15|
+|109   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized103   |     1|
+|110   |                    \ramloop[41].ram.r                                     |blk_mem_gen_prim_width__parameterized104     |    15|
+|111   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized104   |     1|
+|112   |                    \ramloop[42].ram.r                                     |blk_mem_gen_prim_width__parameterized105     |    15|
+|113   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized105   |     1|
+|114   |                    \ramloop[43].ram.r                                     |blk_mem_gen_prim_width__parameterized106     |    15|
+|115   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized106   |     1|
+|116   |                    \ramloop[44].ram.r                                     |blk_mem_gen_prim_width__parameterized107     |    15|
+|117   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized107   |     1|
+|118   |                    \ramloop[45].ram.r                                     |blk_mem_gen_prim_width__parameterized108     |    15|
+|119   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized108   |     1|
+|120   |                    \ramloop[46].ram.r                                     |blk_mem_gen_prim_width__parameterized109     |    15|
+|121   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized109   |     1|
+|122   |                    \ramloop[47].ram.r                                     |blk_mem_gen_prim_width__parameterized110     |    15|
+|123   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized110   |     1|
+|124   |                    \ramloop[48].ram.r                                     |blk_mem_gen_prim_width__parameterized111     |    18|
+|125   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized111   |     4|
+|126   |                    \ramloop[49].ram.r                                     |blk_mem_gen_prim_width__parameterized112     |    18|
+|127   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized112   |     4|
+|128   |                    \ramloop[4].ram.r                                      |blk_mem_gen_prim_width__parameterized67      |    15|
+|129   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized67    |     1|
+|130   |                    \ramloop[50].ram.r                                     |blk_mem_gen_prim_width__parameterized113     |    18|
+|131   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized113   |     4|
+|132   |                    \ramloop[51].ram.r                                     |blk_mem_gen_prim_width__parameterized114     |    18|
+|133   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized114   |     4|
+|134   |                    \ramloop[52].ram.r                                     |blk_mem_gen_prim_width__parameterized115     |    18|
+|135   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized115   |     4|
+|136   |                    \ramloop[53].ram.r                                     |blk_mem_gen_prim_width__parameterized116     |    18|
+|137   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized116   |     4|
+|138   |                    \ramloop[54].ram.r                                     |blk_mem_gen_prim_width__parameterized117     |    18|
+|139   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized117   |     4|
+|140   |                    \ramloop[5].ram.r                                      |blk_mem_gen_prim_width__parameterized68      |    15|
+|141   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized68    |     1|
+|142   |                    \ramloop[6].ram.r                                      |blk_mem_gen_prim_width__parameterized69      |    15|
+|143   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized69    |     1|
+|144   |                    \ramloop[7].ram.r                                      |blk_mem_gen_prim_width__parameterized70      |    15|
+|145   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized70    |     1|
+|146   |                    \ramloop[8].ram.r                                      |blk_mem_gen_prim_width__parameterized71      |    15|
+|147   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized71    |     1|
+|148   |                    \ramloop[9].ram.r                                      |blk_mem_gen_prim_width__parameterized72      |    15|
+|149   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized72    |     1|
+|150   |          rstblk                                                           |reset_blk_ramfifo__parameterized0__xdcDup__1 |    19|
+|151   |            \ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst  |xpm_cdc_sync_rst                             |     5|
+|152   |      \gaxi_full_lite.gwrite_ch.gwach2.axi_wach                            |fifo_generator_top                           |  8989|
+|153   |        \grf.rf                                                            |fifo_generator_ramfifo                       |  8989|
+|154   |          \gntv_or_sync_fifo.gl0.rd                                        |rd_logic                                     |   366|
+|155   |            \gr1.gr1_int.rfwft                                             |rd_fwft_4                                    |    17|
+|156   |            \grss.rsts                                                     |rd_status_flags_ss                           |    17|
+|157   |              c1                                                           |compare_5                                    |     8|
+|158   |              c2                                                           |compare_6                                    |     7|
+|159   |            rpntr                                                          |rd_bin_cntr                                  |   332|
+|160   |          \gntv_or_sync_fifo.gl0.wr                                        |wr_logic                                     |   365|
+|161   |            \gwss.wsts                                                     |wr_status_flags_ss                           |    26|
+|162   |              c0                                                           |compare                                      |     8|
+|163   |              c1                                                           |compare_3                                    |     7|
+|164   |            wpntr                                                          |wr_bin_cntr                                  |   339|
+|165   |          \gntv_or_sync_fifo.mem                                           |memory                                       |  8244|
+|166   |            \gdm.dm_gen.dm                                                 |dmem                                         |  8209|
+|167   |          rstblk                                                           |reset_blk_ramfifo__xdcDup__2                 |    14|
+|168   |            \ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst           |xpm_cdc_async_rst__3                         |     2|
+|169   |      \gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch                            |fifo_generator_top__parameterized0           |  1663|
+|170   |        \grf.rf                                                            |fifo_generator_ramfifo__parameterized0       |  1663|
+|171   |          \gntv_or_sync_fifo.gl0.rd                                        |rd_logic__parameterized0                     |   200|
+|172   |            \gr1.gr1_int.rfwft                                             |rd_fwft__parameterized0                      |    20|
+|173   |            \grss.rsts                                                     |rd_status_flags_ss__parameterized0           |    19|
+|174   |              c1                                                           |compare__parameterized0_1                    |     8|
+|175   |              c2                                                           |compare__parameterized0_2                    |     9|
+|176   |            rpntr                                                          |rd_bin_cntr__parameterized0                  |   161|
+|177   |          \gntv_or_sync_fifo.gl0.wr                                        |wr_logic__parameterized0                     |   196|
+|178   |            \gwss.wsts                                                     |wr_status_flags_ss__parameterized0           |    51|
+|179   |              c0                                                           |compare__parameterized0                      |     8|
+|180   |              c1                                                           |compare__parameterized0_0                    |     8|
+|181   |            wpntr                                                          |wr_bin_cntr__parameterized0                  |   145|
+|182   |          \gntv_or_sync_fifo.mem                                           |memory__parameterized0                       |  1252|
+|183   |            \gbm.gbmg.gbmga.ngecc.bmg                                      |blk_mem_gen_v8_4_1                           |  1216|
+|184   |              inst_blk_mem_gen                                             |blk_mem_gen_v8_4_1_synth                     |  1216|
+|185   |                \gnbram.gnativebmg.native_blk_mem_gen                      |blk_mem_gen_top                              |  1216|
+|186   |                  \valid.cstr                                              |blk_mem_gen_generic_cstr                     |  1216|
+|187   |                    \has_mux_b.B                                           |blk_mem_gen_mux__parameterized0              |   256|
+|188   |                    \ramloop[0].ram.r                                      |blk_mem_gen_prim_width                       |    15|
+|189   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper                     |     1|
+|190   |                    \ramloop[10].ram.r                                     |blk_mem_gen_prim_width__parameterized9       |    15|
+|191   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized9     |     1|
+|192   |                    \ramloop[11].ram.r                                     |blk_mem_gen_prim_width__parameterized10      |    15|
+|193   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized10    |     1|
+|194   |                    \ramloop[12].ram.r                                     |blk_mem_gen_prim_width__parameterized11      |    15|
+|195   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized11    |     1|
+|196   |                    \ramloop[13].ram.r                                     |blk_mem_gen_prim_width__parameterized12      |    15|
+|197   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized12    |     1|
+|198   |                    \ramloop[14].ram.r                                     |blk_mem_gen_prim_width__parameterized13      |    15|
+|199   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized13    |     1|
+|200   |                    \ramloop[15].ram.r                                     |blk_mem_gen_prim_width__parameterized14      |    15|
+|201   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized14    |     1|
+|202   |                    \ramloop[16].ram.r                                     |blk_mem_gen_prim_width__parameterized15      |    15|
+|203   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized15    |     1|
+|204   |                    \ramloop[17].ram.r                                     |blk_mem_gen_prim_width__parameterized16      |    15|
+|205   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized16    |     1|
+|206   |                    \ramloop[18].ram.r                                     |blk_mem_gen_prim_width__parameterized17      |    15|
+|207   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized17    |     1|
+|208   |                    \ramloop[19].ram.r                                     |blk_mem_gen_prim_width__parameterized18      |    15|
+|209   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized18    |     1|
+|210   |                    \ramloop[1].ram.r                                      |blk_mem_gen_prim_width__parameterized0       |    15|
+|211   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized0     |     1|
+|212   |                    \ramloop[20].ram.r                                     |blk_mem_gen_prim_width__parameterized19      |    15|
+|213   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized19    |     1|
+|214   |                    \ramloop[21].ram.r                                     |blk_mem_gen_prim_width__parameterized20      |    15|
+|215   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized20    |     1|
+|216   |                    \ramloop[22].ram.r                                     |blk_mem_gen_prim_width__parameterized21      |    15|
+|217   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized21    |     1|
+|218   |                    \ramloop[23].ram.r                                     |blk_mem_gen_prim_width__parameterized22      |    15|
+|219   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized22    |     1|
+|220   |                    \ramloop[24].ram.r                                     |blk_mem_gen_prim_width__parameterized23      |    15|
+|221   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized23    |     1|
+|222   |                    \ramloop[25].ram.r                                     |blk_mem_gen_prim_width__parameterized24      |    15|
+|223   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized24    |     1|
+|224   |                    \ramloop[26].ram.r                                     |blk_mem_gen_prim_width__parameterized25      |    15|
+|225   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized25    |     1|
+|226   |                    \ramloop[27].ram.r                                     |blk_mem_gen_prim_width__parameterized26      |    15|
+|227   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized26    |     1|
+|228   |                    \ramloop[28].ram.r                                     |blk_mem_gen_prim_width__parameterized27      |    15|
+|229   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized27    |     1|
+|230   |                    \ramloop[29].ram.r                                     |blk_mem_gen_prim_width__parameterized28      |    15|
+|231   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized28    |     1|
+|232   |                    \ramloop[2].ram.r                                      |blk_mem_gen_prim_width__parameterized1       |    15|
+|233   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized1     |     1|
+|234   |                    \ramloop[30].ram.r                                     |blk_mem_gen_prim_width__parameterized29      |    15|
+|235   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized29    |     1|
+|236   |                    \ramloop[31].ram.r                                     |blk_mem_gen_prim_width__parameterized30      |    15|
+|237   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized30    |     1|
+|238   |                    \ramloop[32].ram.r                                     |blk_mem_gen_prim_width__parameterized31      |    15|
+|239   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized31    |     1|
+|240   |                    \ramloop[33].ram.r                                     |blk_mem_gen_prim_width__parameterized32      |    15|
+|241   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized32    |     1|
+|242   |                    \ramloop[34].ram.r                                     |blk_mem_gen_prim_width__parameterized33      |    15|
+|243   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized33    |     1|
+|244   |                    \ramloop[35].ram.r                                     |blk_mem_gen_prim_width__parameterized34      |    15|
+|245   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized34    |     1|
+|246   |                    \ramloop[36].ram.r                                     |blk_mem_gen_prim_width__parameterized35      |    15|
+|247   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized35    |     1|
+|248   |                    \ramloop[37].ram.r                                     |blk_mem_gen_prim_width__parameterized36      |    15|
+|249   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized36    |     1|
+|250   |                    \ramloop[38].ram.r                                     |blk_mem_gen_prim_width__parameterized37      |    15|
+|251   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized37    |     1|
+|252   |                    \ramloop[39].ram.r                                     |blk_mem_gen_prim_width__parameterized38      |    15|
+|253   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized38    |     1|
+|254   |                    \ramloop[3].ram.r                                      |blk_mem_gen_prim_width__parameterized2       |    15|
+|255   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized2     |     1|
+|256   |                    \ramloop[40].ram.r                                     |blk_mem_gen_prim_width__parameterized39      |    15|
+|257   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized39    |     1|
+|258   |                    \ramloop[41].ram.r                                     |blk_mem_gen_prim_width__parameterized40      |    15|
+|259   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized40    |     1|
+|260   |                    \ramloop[42].ram.r                                     |blk_mem_gen_prim_width__parameterized41      |    15|
+|261   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized41    |     1|
+|262   |                    \ramloop[43].ram.r                                     |blk_mem_gen_prim_width__parameterized42      |    15|
+|263   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized42    |     1|
+|264   |                    \ramloop[44].ram.r                                     |blk_mem_gen_prim_width__parameterized43      |    15|
+|265   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized43    |     1|
+|266   |                    \ramloop[45].ram.r                                     |blk_mem_gen_prim_width__parameterized44      |    15|
+|267   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized44    |     1|
+|268   |                    \ramloop[46].ram.r                                     |blk_mem_gen_prim_width__parameterized45      |    15|
+|269   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized45    |     1|
+|270   |                    \ramloop[47].ram.r                                     |blk_mem_gen_prim_width__parameterized46      |    15|
+|271   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized46    |     1|
+|272   |                    \ramloop[48].ram.r                                     |blk_mem_gen_prim_width__parameterized47      |    15|
+|273   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized47    |     1|
+|274   |                    \ramloop[49].ram.r                                     |blk_mem_gen_prim_width__parameterized48      |    15|
+|275   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized48    |     1|
+|276   |                    \ramloop[4].ram.r                                      |blk_mem_gen_prim_width__parameterized3       |    15|
+|277   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized3     |     1|
+|278   |                    \ramloop[50].ram.r                                     |blk_mem_gen_prim_width__parameterized49      |    15|
+|279   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized49    |     1|
+|280   |                    \ramloop[51].ram.r                                     |blk_mem_gen_prim_width__parameterized50      |    15|
+|281   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized50    |     1|
+|282   |                    \ramloop[52].ram.r                                     |blk_mem_gen_prim_width__parameterized51      |    15|
+|283   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized51    |     1|
+|284   |                    \ramloop[53].ram.r                                     |blk_mem_gen_prim_width__parameterized52      |    15|
+|285   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized52    |     1|
+|286   |                    \ramloop[54].ram.r                                     |blk_mem_gen_prim_width__parameterized53      |    15|
+|287   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized53    |     1|
+|288   |                    \ramloop[55].ram.r                                     |blk_mem_gen_prim_width__parameterized54      |    15|
+|289   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized54    |     1|
+|290   |                    \ramloop[56].ram.r                                     |blk_mem_gen_prim_width__parameterized55      |    15|
+|291   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized55    |     1|
+|292   |                    \ramloop[57].ram.r                                     |blk_mem_gen_prim_width__parameterized56      |    15|
+|293   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized56    |     1|
+|294   |                    \ramloop[58].ram.r                                     |blk_mem_gen_prim_width__parameterized57      |    15|
+|295   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized57    |     1|
+|296   |                    \ramloop[59].ram.r                                     |blk_mem_gen_prim_width__parameterized58      |    15|
+|297   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized58    |     1|
+|298   |                    \ramloop[5].ram.r                                      |blk_mem_gen_prim_width__parameterized4       |    15|
+|299   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized4     |     1|
+|300   |                    \ramloop[60].ram.r                                     |blk_mem_gen_prim_width__parameterized59      |    15|
+|301   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized59    |     1|
+|302   |                    \ramloop[61].ram.r                                     |blk_mem_gen_prim_width__parameterized60      |    15|
+|303   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized60    |     1|
+|304   |                    \ramloop[62].ram.r                                     |blk_mem_gen_prim_width__parameterized61      |    15|
+|305   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized61    |     1|
+|306   |                    \ramloop[63].ram.r                                     |blk_mem_gen_prim_width__parameterized62      |    15|
+|307   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized62    |     1|
+|308   |                    \ramloop[6].ram.r                                      |blk_mem_gen_prim_width__parameterized5       |    15|
+|309   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized5     |     1|
+|310   |                    \ramloop[7].ram.r                                      |blk_mem_gen_prim_width__parameterized6       |    15|
+|311   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized6     |     1|
+|312   |                    \ramloop[8].ram.r                                      |blk_mem_gen_prim_width__parameterized7       |    15|
+|313   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized7     |     1|
+|314   |                    \ramloop[9].ram.r                                      |blk_mem_gen_prim_width__parameterized8       |    15|
+|315   |                      \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper__parameterized8     |     1|
+|316   |          rstblk                                                           |reset_blk_ramfifo__parameterized0            |    15|
+|317   |            \ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst  |xpm_cdc_sync_rst__2                          |     5|
+|318   |      \gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch                            |fifo_generator_top__parameterized1           |    76|
+|319   |        \grf.rf                                                            |fifo_generator_ramfifo__parameterized1       |    76|
+|320   |          \gntv_or_sync_fifo.gl0.rd                                        |rd_logic__parameterized1                     |    36|
+|321   |            \gr1.gr1_int.rfwft                                             |rd_fwft                                      |    15|
+|322   |            \grss.rsts                                                     |rd_status_flags_ss__parameterized1           |     2|
+|323   |            rpntr                                                          |rd_bin_cntr__parameterized1                  |    19|
+|324   |          \gntv_or_sync_fifo.gl0.wr                                        |wr_logic__parameterized1                     |    19|
+|325   |            \gwss.wsts                                                     |wr_status_flags_ss__parameterized1           |     6|
+|326   |            wpntr                                                          |wr_bin_cntr__parameterized1                  |    13|
+|327   |          \gntv_or_sync_fifo.mem                                           |memory__parameterized1                       |     8|
+|328   |            \gdm.dm_gen.dm                                                 |dmem__parameterized0                         |     4|
+|329   |          rstblk                                                           |reset_blk_ramfifo                            |    13|
+|330   |            \ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst           |xpm_cdc_async_rst__4                         |     2|
++------+---------------------------------------------------------------------------+---------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:48 ; elapsed = 00:04:51 . Memory (MB): peak = 1051.871 ; gain = 787.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 759 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:04:42 . Memory (MB): peak = 1051.871 ; gain = 673.840
+Synthesis Optimization Complete : Time (s): cpu = 00:04:48 ; elapsed = 00:04:51 . Memory (MB): peak = 1051.871 ; gain = 787.117
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5547 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'U0/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3362 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 32 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2816 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 512 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:01 ; elapsed = 00:05:04 . Memory (MB): peak = 1577.109 ; gain = 1322.773
+INFO: [Common 17-1381] The checkpoint 'C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.runs/Audio_Interface_fifo_generator_0_0_synth_1/Audio_Interface_fifo_generator_0_0.dcp' has been generated.

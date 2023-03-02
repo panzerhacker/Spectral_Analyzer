@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1677772992">
+  <File Type="PA-TCL" Name="Audio_Interface_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Audio_Interface_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Audio_Interface_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Audio_Interface_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="Audio_Interface_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Audio_Interface_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Audio_Interface_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Audio_Interface_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Audio_Interface_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/Audio_Interface/Audio_Interface.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/Audio_Interface/hdl/Audio_Interface_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Audio_Interface_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/base.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_fifo_generator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_xfft_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_processing_system7_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_axi_dma_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Audio_Interface_fifo_generator_1_0"/>
+</GenRun>

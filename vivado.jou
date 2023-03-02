@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Feb  8 00:03:20 2023
+# Process ID: 18524
+# Current directory: C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19284 C:\Users\panze\Documents\Project\Vivado_Work\Spectral_Analyzer\Spectral_Analyzer.xpr
+# Log file: C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/vivado.log
+# Journal file: C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.sdk -hwspec C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.sdk/Audio_Interface_wrapper.hdf
+launch_sdk -workspace C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.sdk -hwspec C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.sdk/Audio_Interface_wrapper.hdf
+launch_sdk -workspace C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.sdk -hwspec C:/Users/panze/Documents/Project/Vivado_Work/Spectral_Analyzer/Spectral_Analyzer.sdk/Audio_Interface_wrapper.hdf

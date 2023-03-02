@@ -1,0 +1,45 @@
+/*
+ * dma.c
+ *
+ *  Created on: 26 Feb 2023
+ *      Author: Alex
+ */
+
+#include "Includes\dma.h"
+
+int dma_Config(void) {
+
+	XAxiDma_Config *DMA_confptr;
+	XAxiDma AxiDMA;
+	kiss_fft_cpx *fft_input, *fft_output;
+	int status;
+
+	DMA_confptr = XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+	status = XAxiDma_CfgInitialize(&AxiDMA, DMA_confptr);
+	if (status != XST_SUCCESS) {
+		xil_printf("Config initialisation failed!\r\n");
+		return XST_FAILURE;
+	}
+
+	fft_input = malloc(2 * sizeof(kiss_fft_cpx) * FFT_SIZE);
+	fft_output = malloc(2 * sizeof(kiss_fft_cpx) * FFT_SIZE);
+
+	for (int i = 0; i < 8; i++) {
+		fft_input[i].r = (float) i;
+		fft_input[i].i = 0.0;
+	}
+	status = XAxiDma_SimpleTransfer(&AxiDMA, (UINTPTR) fft_output, (sizeof(kiss_fft_cpx) * FFT_SIZE), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&AxiDMA, (UINTPTR) fft_input, (sizeof(kiss_fft_cpx) * FFT_SIZE), XAXIDMA_DMA_TO_DEVICE);
+
+	status = checkDMAIdle(XPAR_AXIDMA_0_BASEADDR, DMA_MM2S_REG_OFFSET);
+	while (status != DMA_IDLE_ADDR) {
+		status = checkDMAIdle(XPAR_AXIDMA_0_BASEADDR, DMA_MM2S_REG_OFFSET);
+	}
+
+	status = checkDMAIdle(XPAR_AXIDMA_0_BASEADDR, DMA_S2MM_REG_OFFSET);
+	while (status != DMA_IDLE_ADDR) {
+		status = checkDMAIdle(XPAR_AXIDMA_0_BASEADDR, DMA_S2MM_REG_OFFSET);
+	}
+
+	return XST_SUCCESS;
+}

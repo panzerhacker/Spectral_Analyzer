@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;_kiss_fft_guts.h, kfc.c, kfc.h, kiss_fft_log.h, kiss_fft.c, kiss_fft.h, kiss_fftnd.c, kiss_fftnd.h, kiss_fftndr.c, kiss_fftndr.h, kiss_fftr.c, kiss_fftr.h&apos; to &apos;src&apos;" description="Move 12 resources to &apos;src&apos;" destination="src" element1="_kiss_fft_guts.h" element10="kiss_fftndr.h" element11="kiss_fftr.c" element12="kiss_fftr.h" element2="kfc.c" element3="kfc.h" element4="kiss_fft_log.h" element5="kiss_fft.c" element6="kiss_fft.h" element7="kiss_fftnd.c" element8="kiss_fftnd.h" element9="kiss_fftndr.c" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="12" stamp="1676680958304" updateReferences="true"/>
+</session>
